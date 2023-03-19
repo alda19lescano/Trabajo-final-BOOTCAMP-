@@ -1,0 +1,513 @@
+body{
+  font-family: 'Inter', sans-serif;
+  margin: auto;
+  width: 100%;
+  background:rgb(24, 24, 24);
+}
+
+/**Header*/
+
+header {
+background: rgb(24, 24, 24);
+}
+
+header p{
+  padding-top: 20px;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: 'Bebas Neue';
+  color: white;
+}
+
+header img{
+display: flex;
+height: 160px;
+width: 230px;
+padding-top: 20px;
+margin-top: 0;
+}
+
+/**Barra de navegación*/
+
+.navbar{
+  padding: 10px;
+}
+
+.nav-link{
+  text-transform: capitalize;
+  width:350px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+  
+}
+.nav-link:hover{
+  text-decoration:underline;
+}
+
+/**Carrusel de imágenes*/
+
+#carouselExampleIndicators {
+background-color: rgb(24, 24, 24);
+padding: 40px 0px 40px;
+}
+
+.imgcarru{
+  height: auto;
+  display: flex;
+}
+
+#carouselExampleIndicators{
+  padding: 0;
+  width: auto;
+}
+
+
+
+.carousel-inner{
+  max-height: 490px;
+  width: auto;
+}
+
+/**Sobre nosotros*/
+
+.nosotrostxt{ 
+justify-content: center;
+margin: 50px 90px 100px;
+padding-top: 50px;
+font-size: 20px;
+color: white;            
+}
+#nosotros h1 {
+font-family: 'Bebas Neue';
+font-size: 50px;
+padding-top: 50px;
+padding-bottom: 30px;
+}
+
+
+.cuadro {
+  border: 2px solid white;
+}
+
+#talles {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 608px;
+}
+
+.talles {
+  display: none;
+  float: center;
+  padding-top: 20px 0 20px;
+  align-items: center;
+  margin: auto;
+
+}
+
+.boton_talles{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#boton_ocultar {
+transition: all 0.6s ease;
+z-index: 1;
+position: relative;
+padding: 10px 50px;
+border: none;
+color: rgb(255, 255, 255, 0.74);
+background-color: rgb(24, 24, 24);
+margin-top: 40px;
+margin-bottom: 40px;
+}
+
+#boton_ocultar::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  left: -10px;
+  top: 0;
+  background-color: #ffffff;;
+  transform: skew(20deg, 0deg);
+  transition: all 0.6s ease;
+}
+
+#boton_ocultar::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: skew(20deg, 0deg);
+  border: 3px solid  #ffffff;;
+  z-index: -1;
+}
+
+#boton_ocultar:hover::after{
+  background-color: #0078ff;
+  transform: skew(20deg, 0deg) translateX(157px);
+}
+
+#boton_ocultar:hover::before{
+  background-color:#0078ff;
+  border: 3px solid rgb(84, 84, 228);
+  transform: skew(20deg, 0deg) scale(1.1);
+}
+
+/** parte de productos **/
+
+#productos{
+padding-top: 40px;
+margin-top: 30px;
+max-width: 1100px;
+padding-bottom: 50px;
+
+}
+
+
+
+.products-container .box .naranja{ background-color: #eb722d;
+
+}
+.products-container .box .green{ background-color: #287831;
+
+}
+.products-container .box .red{ background-color: #e30b16;
+
+}
+.products-container .box .redd{ background-color: #ed1321;
+
+}
+.products-container .box .blue{ background-color: #263787;
+
+}
+.products-container .box .yellow{ background-color: #fffc01;
+
+}
+.products-container .box .ylw{ background-color: #fce45e;
+
+}
+.products-container .box .ylww{ background-color: #fcec8a;
+
+}
+.products-container .box .orng{ background-color: #eb722d;
+
+}
+
+.card{ background-color: rgb(24, 24, 24);
+  color: white;
+  margin-top: 100px;
+  text-align: center;
+ padding-bottom: 0px; 
+ border: 3px solid rgb(49, 48, 48);
+}
+
+.card-img-top{
+  border: 1px solid black;
+}
+.btn-primary{
+  
+  margin-top: 20px;
+}
+a{ text-decoration: none;}
+.colorbg{
+  background: rgb(158, 156, 156);
+  padding-top: 1px;
+  
+}
+.col-lg-5{
+  margin-bottom: 100px;
+}
+
+
+.sobreyo{ 
+  width: 340px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  font-size: 35px;
+  
+}
+
+.products-container{
+  display: grid;
+  margin: 0px;
+  padding-top: 25px;
+  border-top: solid 4px rgb(255, 255, 255);
+  grid-template-columns: repeat(auto-fit,minmax(280px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  
+
+}
+.products-container .box{
+position: relative;
+padding: 20px;
+padding-bottom: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+  
+border-radius: 15px;
+border: 3px white solid;
+}
+
+
+
+.products-container .box img{
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  object-position: center;
+  padding: 5px;
+  
+  background: white;
+  border-radius: 0.5rem;
+
+}
+.products-container .box h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0.5rem 0 0.5rem;
+
+}
+.products-container .box span{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+.remeras{
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 40px;
+  
+}
+.accordion-item{
+  background-color: rgb(24, 24, 24); border: none;
+  
+}
+.accordion-header{  text-align: center;
+  
+       
+}
+.accordion-button{
+  color: white; background-color: rgb(24, 24, 24); font-size: 30px; text-align: center;
+  padding: 15px; text-transform: uppercase;
+  border-bottom: solid 3px;
+  border-bottom-color: white;
+   
+}
+
+.accordion{
+ 
+ width: auto;
+
+}
+.accordion-item:first-of-type .accordion-button{
+  color:rgb(255, 255, 255); text-align: center;
+  background-color: rgb(24, 24, 24);
+  
+  
+}
+.accordion-button:focus{
+  box-shadow: none;
+  border-color: white;
+}
+.accordion-button:not(.collapsed){
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #ffffff;
+  color: white;
+  background-color: rgb(24, 24, 24);
+}
+
+.products-container .box .carousel {
+  margin-bottom: 0px;
+}
+.innerk{ height: auto;}
+
+
+
+/**Contacto*/
+
+#contacto h5 {
+font-family: 'Bebas Neue';
+font-size: 50px;
+margin-bottom: 50px;
+padding-bottom: 40px;
+}
+
+.contacto{
+text-align: center;
+margin-bottom: 20px; font-size: 30px; font-family: 'Bebas Neue';
+color: white;
+margin-top: 20px;
+}
+
+.contactanos h2{
+text-align: center;
+padding: 15px;
+padding-top: 25px;
+color: white;
+font-size: 35px;
+font-family: 'Bebas Neue';
+}
+
+.h5, h5{
+font-size: 35px;
+color: white;
+margin-bottom: 15px;
+border-bottom: solid 3px;
+padding-bottom: 10px;
+  
+}
+
+.lead{
+font-size: 1.25rem;
+color: white;
+}
+ol, ul{
+color: white;
+}
+
+
+.form-floating{
+width: 300px;
+margin: auto;
+}
+.form-control{
+margin-top: 14px;
+
+}
+
+.prov{
+padding: 7px;
+}
+
+.contact-mf {
+margin-top: 4rem;
+}
+
+.mensaje input,
+.mensaje textarea {
+border-radius: 8px;
+box-shadow: none;
+font-size: 14px;
+}
+
+.mensaje input:focus,
+.mensaje textarea:focus {
+ border-color: #0078ff;
+}
+
+.mensaje input {
+padding: 10px 15px;
+}
+
+.mensaje textarea {
+padding: 12px 15px;
+margin-bottom: 0;
+border-radius: 8px;
+font-size: 14px;
+}
+
+#boton {
+transition: all 0.6s ease;
+z-index: 1;
+position: relative;
+padding: 10px 50px;
+border: none;
+color: rgb(255, 255, 255, 0.74);
+background-color: rgb(24, 24, 24);
+margin-top: 40px;
+margin-bottom: 40px;
+}
+
+#boton::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  left: -10px;
+  top: 0;
+  background-color: #ffffff;;
+  transform: skew(20deg, 0deg);
+  transition: all 0.6s ease;
+}
+
+#boton::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: skew(20deg, 0deg);
+  border: 3px solid  #ffffff;;
+  z-index: -1;
+}
+
+#boton:hover::after{
+  background-color: rgb(177, 177, 255, 0.681);
+  transform: skew(20deg, 0deg) translateX(221px);
+}
+
+#boton:hover::before{
+  background-color:#0078ff;
+  border: 3px solid rgb(84, 84, 228);
+  transform: skew(20deg, 0deg) scale(1.1);
+}
+
+#lista {
+  list-style: none;
+  font-size: 20px;
+  padding-left: 0;
+  padding-top: 25px;
+  color:#0078ff;
+}
+
+/**footer*/
+
+footer{
+background:  rgb(15, 15, 15);;
+padding: 30px 0;
+color: white;
+margin-top: 40px;
+margin-bottom: -142px;
+}
+
+footer img {
+width:40px;
+height: 40px;
+}
+
+
+#copyright{
+text-align: center;
+margin-top: 10px;
+color: rgb(219, 219, 219);
+}
+
+.footer-paralax {
+padding: 4rem 0 0 0;
+border-top: solid 3px white;
+margin-top: 20px;
+}
+
+
+/**Para centrar elementos*/
+.centro {
+display: flex;
+flex-direction:row;
+justify-content:center;
+align-items: center;
+}
